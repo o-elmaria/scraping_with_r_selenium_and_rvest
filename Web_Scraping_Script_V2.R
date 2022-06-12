@@ -1,4 +1,7 @@
 # Load libraries
+if (system.file(packge == "pacman") == "") {
+  install.packages("pacman")
+}
 pacman::p_load(rvest, httr, dplyr, ggplot2, googlesheets4, RSelenium, stringr, # Libraries used in the code 
                stringi, netstat, tibble, tidyverse, Rcrawler, splashr, magick, # Libraries used in the code
                purrr, V8, seleniumPipes, chromote, magrittr, parallel, foreach, doParallel) # Libraries not used in the code, but could be useful for optimization cases
@@ -222,7 +225,6 @@ df_scrap <- df_scrap %>%
 ##--------------------------------------------------START OF Individual Product Page Scraping-------------------------------------------------##
 
 # Create a function that takes an individual product page link from df_scrap, extracts the HTML code, and scrapes all info on it
-
 prod_page_func <- function(url){
   pp_url <- navigate_selenium_func("firefox", url) # Navigate to the individual product page which will be scraped
   
