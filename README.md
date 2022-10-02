@@ -7,8 +7,9 @@ This is the R version of the Python crawling script I created to crawl the ```ho
 # 2. Usability and Reproducability
 - You need to have **R** and **RStudio** installed before you can run this code on your machine. You can install **R** from this [link](https://cran.r-project.org/bin/windows/base/) and **RStudio** (IDE) from this [link](https://www.rstudio.com/products/rstudio/download/)
 
-- R doesn't need as much installation steps as Python. Simply clone the repo by typing this command in **Git Bash** and run the script right away. Please keep in mind that the homzmart website might update its backend at some point in the future, which might potentially make the CSS/XPath selectors used in the script **invalid**. This could cause the script to throw errors.  
+- R doesn't need as much installation steps as Python. Simply clone the repo by typing this command in **Git Bash** and run the script right away.
   - ```git clone https://github.com/omar-elmaria/scraping_with_r_selenium_and_rvest.git```
+- Please keep in mind that the homzmart website might update its backend at some point in the future, which might potentially make the CSS/XPath selectors used in the script **invalid**. This could cause the script to throw errors.
 
 # 3. Questions?
 If you have any questions or wish to build a scraper for a particular use case, feel free to contact me on [LinkedIn](https://www.linkedin.com/in/omar-elmaria/)
